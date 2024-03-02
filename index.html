@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolidação</title>
+    <link rel="stylesheet" href="projeto 1/style.css">
+</head>
+<body>
+    <main>
+        <section class="inicio">
+            <img src="projeto 1/img/eu 300x300.jpg" alt="Foto do Felipe" class="myfoto">
+            <h1>Luiz Felipe</h1>
+            <h2>Desenvolvedor de software</h2>
+            <a href="https://www.instagram.com/designer_contrast/" target="_blank">Instagram</a> <br>
+            <a href="https://www.behance.net/designerfelipe" target="_blank">Behance</a>
+        </section>
+        <section class="skillsSec">
+            <div class="skills">
+                <h1>Minhas Habilidades</h1>
+                <ul>
+                    <li>
+                        <h3>PROGRAMAÇÃO</h3>
+                        <span class="barras"><span class="prog"></span></span>
+                    </li>
+                    <li>
+                        <h3>INVESTIMENTOS</h3>
+                        <span class="barras"><span class="inv"></span></span>
+                    </li>
+                    <li>
+                        <h3>VÍDEO</h3>
+                        <span class="barras"><span class="vid"></span></span>
+                    </li>
+                    <li>
+                        <h3> DESIGN</h3>
+                        <span class="barras"><span class="dsn"></span></span>
+                    </li>
+                    <li>
+                        <h3>3D</h3>
+                        <span class="barras"><span class="d3"></span></span>
+                    </li>
+                    <li>
+                        <h3>MARKETING</h3>
+                        <span class="barras"><span class="mark"></span></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="tel">
+            
+            <section class="outTel">
+
+                <div class="nomeApp">
+                <a href="projeto 3 Tel/home.html" target="tela"><img src="projeto 3 Tel/imagens/logo-home.jpg" alt=""></a>
+                    <p>Home</p>
+                </div>
+                <div class="nomeApp">
+                <a href="projeto 3 Tel/facebook.html" target="tela"><img src="projeto 3 Tel/imagens/logo-facebook.jpg" alt=""></a>
+                <p>Facebook</p>
+                </div>
+                <div class="nomeApp">
+                <a href="projeto 3 Tel/github.html" target="tela"><img src="projeto 3 Tel/imagens/logo-github.jpg" alt=""></a>
+                <p>Github</p>
+                </div>
+                <div class="nomeApp">
+                <a href="projeto 3 Tel/instagram.html" target="tela"><img src="projeto 3 Tel/imagens/logo-instagram.jpg" alt=""></a>
+                <p>Instagram</p>
+                </div>
+                <div class="nomeApp">
+                <a href="projeto 3 Tel/twitter.html" target="tela"><img src="projeto 3 Tel/imagens/logo-twitter.jpg" alt=""></a>
+                <p>Twitter</p>
+                </div>
+                <div class="nomeApp">
+                <a href="projeto 3 Tel/youtube.html" target="tela"><img src="projeto 3 Tel/imagens/logo-youtube.jpg" alt=""></a>
+                <p>Youtube</p>
+                </div>
+            </section>
+            <section class="inTel">
+                <img src="projeto 3 Tel/imagens/frame-iphone2.png" alt="" class="Tel">
+                <iframe name="tela" src="projeto 3 Tel/home.html" frameborder="0"></iframe>
+            </section>
+        </section>
+        <section class="form">
+            <h1>Deixe seus dados para contato<h1>
+            <form action="cadastro.js" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Pessoal</legend>
+                    <p><label for="inome">Nome:</label>
+                        <input type="text" name="Nome" id="inome" required maxlength="20" size="37" placeholder="Coloque aqui seu nome (sem Sobrenome)" autocomplete="name">
+                    </p>
+                    <p><label for="isobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" size="30" placeholder="Coloque aqui seu Sobrenome" autocomplete="name">
+                    </p>
+                </fieldst>
+                    <fieldset>
+                        <legend>Acesso</legend>
+                        <p><label for="iusuario">Usuário:</label>
+                            <input type="text" name="usuario" id="iusuario" required minlength="3" maxlength="20" size="35" placeholder="Seu nome de usuário" autocomplete="username">
+                        </p>
+                        <p><label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="36" placeholder="Sua senha" autocomplete="new-password">
+                        </p>
+                    </fieldset>
+                <fieldset>
+                    <legend>Dados</legend>
+                        <p>
+                            <label for="inum">Número favorito</label>
+                            <input type="number" name="num" id="inum" min="0" max="10" step="0.25" placeholder="0 a 10" required value="3">
+                        </p>
+                        <p>
+                            <label for="imes">Mês que deseja começar</label>
+                            <input type="month" name="mes" id="imes" required>
+                        </p>
+                        <p>
+                            <label for="idata">Data de nascimento</label>
+                            <input type="date" name="data" id="idata" required value="2006-09-06">
+                        </p>
+                        <p>
+                            <label for="ihora">Hora da sorte</label>
+                            <input type="time" name="hora" id="ihora" value="08:00">
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Contato</legend>
+                        <p>
+                            <label for="iemail">Email</label>
+                            <input type="email" name="mail" id="iemail" size="39" placeholder="digite seu email" required autocomplete="email">
+                        </p>
+                        <p>
+                            <label for="itel">Telefone</label>
+                            <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(21)91234-5678" size="36" pattern="^\([1-9]{2}\)[0-9]{5}\-[0-9]{4}$">
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Marque</legend>
+                    <fieldset>
+                        <legend>Áreas Favoritas</legend>
+                        <input type="checkbox" name="progra" id="iprogra"><label for="iprogra" class="marque">Programação</label>
+                        <input type="checkbox" name="inves" id="iinves"><label for="iinves" class="marque">Investimentos</label>
+                        <input type="checkbox" name="desi" id="idesi"><label for="idesi" class="marque">Design</label>
+                        <input type="checkbox" name="vide" id="ivide"><label for="ivide" class="marque">Vídeo</label>
+                        <input type="checkbox" name="3d" id="i3d"><label for="i3d" class="marque">3D</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sex" id="imasc" checked value="M"><label for="imasc" class="marque">Masculino</label> <br>
+                        <input type="radio" name="sex" id="ifem" value="F"><label for="ifem" class="marque">Feminino</label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Personalize</legend>
+                    <p>
+                        <label for="icor">Cor</label>
+                        <input type="color" name="cor" id="icor" class="formalt" value="#00ff00">
+                    </p>
+                    <p>
+                        <label for="inivel">Nível de satisfação</label>
+                        <input type="range" name="nivel" id="inivel" min="1" max="6" class="formalt" value="5">
+                    </p>
+                    <p>
+                        <label for="foto">Foto de perfil</label>
+                        <input type="file" name="" id="">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Local</legend>
+                    <p>
+                        <label for="iest">Estado</label>
+                        <select name="est" id="iest">
+                            <optgroup label="Sudeste">
+                                <option value="RJ" selected>Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="PE">Pernambuco</option>
+                                <option value="PB">Paraíba</option>
+                            </optgroup>
+                            <optgroup label="Centro-oeste">
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                            </optgroup>
+                            <optgroup label="Norte">
+                                <option value="AM">Amazonas</option>
+                                <option value="AC">Acre</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="iprof">Profissão</label>
+                        <input type="text" name="prof" id="iprof" list="lstprof">
+                        <datalist id="lstprof">
+                            <option value="ADM">Administração</option>
+                            <option value="DEV">Desenvolvedor</option>
+                            <option value="VID">Editor de Vídeo</option>
+                            <option value="DSN">Design</option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="imsg">Mensagem</label> <br>
+                        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Output</legend>
+                    <p>
+                        <label for="inum1">1º Número:</label>
+                        <input type="number" name="num1" id="inum1" min="1" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                    </p>
+                    <p>
+                        <label for="inum2">2º Número:</label>
+                        <input type="number" name="num1" id="inum2" min="1" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                    </p>
+                    <p>
+                        <label for="isoma">Resultado</label>
+                        <output name="soma" id="isoma">0</output>
+                    </p>
+                    <p>
+                        <label for="inumr">Número: </label> <output id="ival">5</output>
+                        <input type="range" name="numr" id="inumr" min="0" max="10" class="formalt" oninput="ival.innerHTML = Number(inumr.value)"> <br>
+                    </p>
+                    <p>
+                        <label for="iano">Em que ano você nasceu?</label>
+                        <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+                    </p>
+                    <p>
+                        <label for="iidade">Sua idade é:</label>
+                        <output id="iidade">0</output>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar" class="button">
+                    <input type="reset" value="Limpar" class="button">
+                </p>
+            </form>
+            <script>
+                function calcIdade(){
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual) -Number(iano.value)
+                }
+            </script>
+        </section>
+    </main>
+</body>
+</html>
